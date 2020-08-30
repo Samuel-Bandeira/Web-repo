@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spock Rock Game</title>
+</head>
+<body>
+    <div class = 'header-container'>
+        <h2 class= 'header-text'>Rock Paper Scissors Lizard Spock</h2>
+    </div>
+    <div class = 'player-container'>
+        <h3>You<span class = 'playerScore'></span></h3>
+        <i class="far fa-hand-rock" onclick="select('rock')"></i>
+        <i class="far fa-hand-paper" onclick="select('paper')"></i>
+        <i class="far fa-hand-scissors" onclick="select('scissors')"></i>
+        <i class="far fa-hand-lizard" onclick="select('lizard')"></i>
+        <i class="far fa-hand-spock" onclick="select('spock')"></i>
+    </div>
+    <div class = 'computer-container'>
+        <h3>Computer<span class = 'computerScore'></span></h3>
+        <i class="far fa-hand-rock"></i>
+        <i class="far fa-hand-paper"></i>
+        <i class="far fa-hand-scissors"></i>
+        <i class="far fa-hand-lizard"></i>
+        <i class="far fa-hand-spock"></i>
+    </div>
+    <i class="fas fa-sync-alt reset-icon"></i>
+    <div class = 'result-container'>
+        <h2 class = 'result-text'></h2>
+    </div>
+
+    <script src = 'script.js'></script>
+</body>
+</html>
