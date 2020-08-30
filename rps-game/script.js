@@ -30,14 +30,14 @@ let playerScoreNumber = 0
 let computerScoreNumber = 0
 let computerChoice = ''
 
-//Reset all selected itens.
+// Reset all selected itens.
 function resetSelected() {
     allGameIcons.forEach((icon) => {
         icon.classList.remove('selected')
     });
 }
 
-//Reset socre & playerChoice/computerChoice
+// Reset socre & playerChoice/computerChoice
 function resetAll() {
     playerScoreNumber = 0
     computerScoreNumber = 0
@@ -112,3 +112,41 @@ function updateScore(playerChoice) {
 }
 
 // Call functions to process turn
+function checkResult(playerChoice) {
+    resetSelected()
+    computerRandomChoice()
+    displayComputerChoice()
+    updateScore(playerChoice)
+}
+
+// Passing Player Selection value and styling icons
+function select(playerChoice) {
+    checkResult(playerChoice)
+    // Add 'selected' style & playerChoice
+    switch(playerChoice) {
+        case 'rock':
+            playerRock.classList.add('selected')
+            playerChoiceEl.textContent = ' --- Rock'
+            break
+        case 'paper':
+            playerPaper.classList.add('selected')
+            playerChoiceEl.textContent = ' --- Paper'
+            break
+        case 'scissors':
+            playerScissors.classList.add('selected')
+            playerChoiceEl.textContent = ' --- Scissors'
+            break
+        case 'lizard':
+            playerLizard.classList.add('selected')
+            playerChoiceEl.textContent = ' --- Lizard'
+            break
+        case 'spock':
+            playerSpock.classList.add('selected')
+            playerChoiceEl.textContent = ' --- Spock'
+            break
+        }
+}
+window.select = select
+
+//On startup, set initial values
+resetAll()
