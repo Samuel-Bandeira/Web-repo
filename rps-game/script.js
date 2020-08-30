@@ -6,7 +6,7 @@ const computerChoiceEl = document.getElementById('computerChoice')
 const playerRock = document.getElementById('playerRock')
 const playerPaper = document.getElementById('playerPaper')
 const playerScissors = document.getElementById('playerScissors')
-const computerLizard = document.getElementById('playerLizard')
+const playerLizard = document.getElementById('playerLizard')
 const playerSpock = document.getElementById('playerSpock')
 
 const computerRock = document.getElementById('computerRock');
@@ -75,7 +75,7 @@ function displayComputerChoice() {
             break
         case 'paper':
             computerPaper.classList.add('selected')
-            computerPaper.textContent = ' --- Paper'
+            computerChoiceEl.textContent = ' --- Paper'
         case 'scissors':
             computerScissors.classList.add('selected');
             computerChoiceEl.textContent = ' --- Scissors';

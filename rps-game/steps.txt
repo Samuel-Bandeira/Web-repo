@@ -1,0 +1,18 @@
+1 - Pegar os elementos do html, como onde ficarão as pontuações, botões clicaveis, botões não clicaveis(pois preciso saber quando eles são atividados), botões de Reset.
+COMPLETO: 
+
+2 - Selecionar todos os botões de itens clicaveis para conseguirmos saber quem está clicado ou não e podermos colori-los de forma diferente.
+COMPLETO:
+
+3 - Armazenar as regras de negócio do jogo, quem ganha de quem, quem perde pra quem...
+COMPLETO:
+
+4 - Fazer uma função para armazenar minha escolha e identificar o item que foi selecionado.
+COMPLETO:
+
+5 - Fazer uma função para que o computador faça escolhas aleatórias.
+COMPLETO:
+
+6 - Função para ver quem ganhou.
+
+8 - Fazer o botão de resetar funcionar, colocando uma função dentro dele que reset tudo. Isso deve se integrar com uma função para resetar todos os itens que estão em estado de 'selected'.
