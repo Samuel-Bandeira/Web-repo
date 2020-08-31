@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Post from  './Post'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<div class = 'app__header'>
+				<h2>Instagram</h2>
+			</div>
+			<Post username='Samuel Bandeira' caption = 'Wow! React' imageUrl='https://material-ui.com/static/images/themes-light.jpg'/>
+			<Post username ='Jame Bond' caption = 'First React! Impresive' imageUrl='https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/dogs_1280p_0.jpg?itok=6jQzdNB8'/>
+		</div>	
+	);
 }
 
 export default App;
